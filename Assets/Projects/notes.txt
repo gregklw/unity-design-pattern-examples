@@ -1,0 +1,26 @@
+Systems:
+-selection system:
+	-modes:
+		-select mode
+		-deselect mode
+	-uses state pattern?
+-move system
+	-uses command pattern
+-turn system
+	-ui
+	-dictates which pieces can be selected
+	-uses observer pattern?
+
+
+-current problem:
+	-can't distinguish between capture tiles and movement tiles
+		-make 2 lists
+			-1 for movement tiles
+			-1 for capture tiles
+
+	-what should handle selection responsibility?
+		-probably the selection states
+	
+	-how do we handle turn changes and player priority?
+		-try looking in the event handler?
+
